@@ -1,0 +1,73 @@
+body {
+
+  background-color: black;
+  background-image: url('images/Photos-Black-3D-HD-pale2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: ;
+}
+
+li {
+  display: inline;
+  margin-left: 20px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: aqua;
+}
+
+h1,
+h3,
+body {
+
+  font-family: fantasy
+  font-size: 18px;
+  font: Baskerville;
+  color: lightgrey;
+}
+
+p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.row {
+  margin-top: 50px;
+}
+
+.container {
+  text-align: center;
+  padding-top: 0px;
+  margin: auto;
+}
+
+#mainImage {
+  margin-top: -50px;
+}
+
+#video {
+  margin-bottom: 100px;
+  margin-top: 75px;
+}
+
+#statement {
+  padding-top: 40px;
+}
+
+#content {
+  background-color: black;
+  border-radius: 15px;
+  padding-top: 60px;
+  margin: auto;
+  margin-top: 60px;
+  text-align: center;
+}

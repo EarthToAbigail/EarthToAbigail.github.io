@@ -1,7 +1,7 @@
 body {
 
   background-color: black;
-  background-image: url('images/Photos-Black-3D-HD-pale2.jpg');
+  background-image: url('images/Photos-Black-3D-HD-pale3.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -19,6 +19,7 @@ li {
 
 ul {
   list-style-type: none;
+  margin-top: 30px;
 }
 
 a {
@@ -71,3 +72,21 @@ p {
   margin-top: 60px;
   text-align: center;
 }
+
+.imgContainer {
+
+  padding-top: 30px;
+  float: center;
+  margin: 75px;
+
+}
+
+
+
+
+
+
+
+
+
+

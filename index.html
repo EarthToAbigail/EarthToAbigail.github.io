@@ -1,106 +1,90 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>Earth To Abigail</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--- CSS Files -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous"/>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-    crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/css" href="main.css"/>
   </head>
 
   <body>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <img src="images/E+A-LogoBlackColTrans.png" id="logo" alt="EarthToAbigail-Logo" style="width:485px;height:320px">
-          </div>
-          </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <img id="mainImage" src="images/PE2-Birds.gif" alt="Loading..." style="width:800px;height:400px">
+    <header>
+        <div id="mainLogo">
+          <img class="images" src="images/E+A-LogoBlackColTrans.png" alt="EarthToAbigail-Logo" style="width:600px;height:330px">
         </div>
-    </div>
+        <div id="gif">
+          <img class="images" id="mainImage" src="images/PE2-Birds.gif" alt="Loading main gif image..." style="width:800px;height:550px">
+        </div>
+    </header>
 
-<!--- BIO -->
-<!---<div class="container" id="content"> -->
-    <div class="row" id="content">
-    <div class="col-md-8 col-md-offset-2">
-        <h3>Electro Pop Tweaked by Digital Experimentation</h3>
-    </div>
-   <div class="row" id="statement">
-   <div class="col-md-10 col-md-offset-1">
+<!--- WHAT -->
+
+    <section id="content">
+      <h3>Electro Pop Tweaked by Digital Experimentation</h3>
+    <div id="About">
       <p>Albert Einstein said: “The important thing is to not stop questioning;
         curiosity has its own reason for existing." In this day and age of rapid technological advancement,
-        this statement takes a new dimension.<br></br>
-        Born in 2017 from the vivid imagination of composer and musician Mynah Marie, Earth To Abigail
+        this statement takes a new dimension.</p>
+        <p>Born in 2017 from the vivid imagination of composer and musician Mynah Marie, Earth To Abigail
         strives to redefine more traditional genres of music by intergrating new mediums of expression
         such as Live Coding and DIY instrument making as well as using loops and samples. The goal is to use technology to
         recreate a full experience for the audience while being alone on stage.
         Curiosity is the main motivator for Earth To Abigail. The thirst to learn new things and find new ways
         of expanding as an artist. Earth To Abigail wishes to communicate this curiosity to everyone experiecing the music.
         This desire is pushed by the strong belief that we are now living in a great time of change and anything
-        bringing awareness and knowledge to people is a good thing.<br></br>
-
-        Mynah Marie has been living the life of a nomad for the past 15 years. Her past work as a musician
-        led her to collaborate with an impressive variety of artists, from Mexico with the latin fusion band Casa Verde Colectivo
-        to India with the bollywood singer Arijit Singh with stops in France, Italty, Israel, Spain, California, Nepal and Egypt along the way.
-        The necessity of creating a project that could give her the creative freedom of a solo act without feeling limited
-        from the boundaries of being alone on stage was precisely derived from the nomadic way of life.
-        The impossibility of finding a stable group of people to play with for an extended period of time led
-        to dream about creating a "band of machines" or at least to start with creating a setup that could fit in a suitcase
-        and be powerful enough to play big stages. Also inspired by her newly aquired passion for coding and programming, Mynah wanted
-        bring into her new project elements that could transcend the music and open conversations and hopefully the curiosity about
-        coding and science in general and the place of technology in our lives today and how we could possibly
-        make better use of it.
-      </p>
+        bringing awareness and knowledge to people is a good thing.</p>
     </div>
-</div>
 
 <!-- VIDEOS -->
 
-    <div id="video" class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/jVn1AB0VaMc"
+    <section>
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/jVn1AB0VaMc"
         frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
+    </section>
 
 <!-- PHOTOS  -->
 
-<div id="photos">
-<div class="imgContainer" id="setup">
-<img src="images/SetUp_4Coulours.jpg" alt="SetUp" style="width:450px;height:300px">
+<section>
+  <div id="who">
+    <p>Mynah Marie has been living the life of a nomad for the past 15 years. Her past work as a musician
+    led her to collaborate with an impressive variety of artists, from Mexico with the latin fusion band Casa Verde Colectivo
+    to India with the bollywood singer Arijit Singh with stops in France, Italty, Israel, Spain, California,
+    Nepal and Egypt along the way.</p>
+  <p>The necessity of creating a project that could give her the creative freedom of a solo act without feeling limited
+    from the boundaries of being alone on stage was precisely derived from the nomadic way of life.
+    The impossibility of finding a stable group of people to play with for an extended period of time led
+    to dream about creating a "band of machines" or at least to start with creating a setup that could fit in a suitcase
+    and be powerful enough to play big stages. Also inspired by her newly aquired passion for coding and programming, Mynah wanted
+    bring into her new project elements that could transcend the music and open conversations and hopefully the curiosity about
+    coding and science in general and the place of technology in our lives today and how we could possibly
+    make better use of it.
+  </p>
+  </div>
+</section>
+<section>
+<div class="gallery">
+<img class="images" src="images/SetUp_4Coulours.jpg" alt="SetUp" style="width:450px;height:300px">
 </div>
-<div class="imgContainer" id="mynah">
-<img src="images/E+A-FB2Cropped.jpg" alt="Mynah Marie" style="width:400px;height:400px">
+<div class="gallery">
+<img class="images" src="images/E+A-FB2Cropped.jpg" alt="Mynah Marie" style="width:400px;height:400px">
 </div>
-</div>
+</section>
+
 <!--- FOOTER -->
-    <div id="footer" class="row">
-    <div class="col-md-8 col-md-offset-2">
+    <nav id="nav-footer">
     <ul>
-      <li class="active"><a href="#"><img src="images/E+ALogoCircle.png" alt="logo" style="width:42px;height:42px"></a></li>
+      <li id="logo" class="active"><a href="#"><img src="images/E+ALogoCircle.png" alt="logo" style="width:42px;height:42px"></a></li>
       <li><a href="https://www.facebook.com/EarthToAbigail" target="_blank">Facebook</a></li>
       <li><a href="https://twitter.com/EarthAbigail" target="_blank">Twitter</a></li>
       <li><a href="https://github.com/EarthToAbigail" target="_blank">GitHub</a></li>
     </ul>
-      </div>
-      </div>
-
-
-
-
-
-
-
+  </nav>
+  </section>
+<footer>
+  <p id="copyright">Copyright © EarthToAbigail 2017</p>
+</footer>
 
     <!--- JS scripts -->
 
@@ -109,6 +93,5 @@
           integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
           crossorigin="anonymous"></script>
           <script type="text/javascript" src='main.js'></script>
-    </div>
   </body>
 </html>

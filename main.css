@@ -5,7 +5,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-blend-mode: ;
 }
 
 li {
@@ -14,7 +13,10 @@ li {
   margin-right: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
 
+#logo {
+  padding: 0 auto;
 }
 
 ul {
@@ -25,6 +27,7 @@ ul {
 
 a {
   color: aqua;
+  text-decoration: none;
 }
 
 h1,
@@ -40,28 +43,33 @@ body {
 p {
   font-size: 16px;
   text-align: justify;
+  max-width: 85%;
+  margin-right: 7.5%;
+  margin-left: 7.5%;
 }
 
-.row {
+section {
   margin-top: 50px;
 }
 
-.container {
-  text-align: center;
-  padding-top: 0px;
-  margin: auto;
-}
-
 #mainImage {
-  margin-top: -50px;
+  margin-top: 5px;
+  border-radius: 50%;
 }
 
-#video {
-  margin-bottom: 100px;
-  margin-top: 75px;
+.images {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
 }
 
-#statement {
+.video {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  max-width: 90%;
+}
+
+#About {
   padding-top: 40px;
 }
 
@@ -69,15 +77,29 @@ p {
   background-color: black;
   border-radius: 15px;
   padding-top: 60px;
+  max-width: 83vw;
   margin: auto;
   margin-top: 60px;
   text-align: center;
 }
 
-.imgContainer {
-
+.gallery {
   padding-top: 30px;
   float: center;
   margin: 75px;
+}
 
+#nav-footer {
+  padding-bottom: 2%;
+}
+
+footer {
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+#copyright {
+  color: black;
+  font-size: 16px;
+  text-align: center;
 }

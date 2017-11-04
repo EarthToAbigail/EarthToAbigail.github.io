@@ -9,23 +9,6 @@ body {
   background-size: 160vw 120vh;
 }
 
-/* IPad Pro Landscape and Portrait */
-@media only screen
-  and (min-device-width: 1024px)
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-
-    body {
-
-      background-color: black;
-      background-image: url('images/Back-3D-grey.jpg');
-      background-repeat: repeat;
-      background-attachment: fixed;
-      background-position: top;
-      background-size: 160vw 120vh;
-    }
-}
-
 /* TEXT */
 h2 {
   font-size: 26px;

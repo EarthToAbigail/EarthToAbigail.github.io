@@ -58,8 +58,10 @@ section {
 .images__main {
   margin-top: 5px;
   border-radius: 50%;
-  width: 750px;
-  height: 500px;
+  /*width: 750px;
+  height: 500px;*/
+  width: 60%;
+  height: 68%;
 }
 
 .media {

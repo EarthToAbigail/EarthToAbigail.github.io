@@ -9,12 +9,14 @@ body {
 }
 
 /* TEXT */
-
 h2 {
   font-size: 26px;
   color: #F72FC9;
   text-align: center;
   font-family: 'Jura', sans-serif;
+  max-width: 85%;
+  margin-right: 7.5%;
+  margin-left: 7.5%;
 }
 
 p {
@@ -28,7 +30,7 @@ p {
 }
 
 section {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 /* IMAGES AND MEDIA */
@@ -50,10 +52,10 @@ section {
 }
 
 #About {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
-#content {
+#Content {
   background-color: black;
   border-radius: 15px;
   padding-top: 60px;
@@ -91,15 +93,11 @@ a {
 }
 
 #logo {
-  margin-bottom: 1%;
+  margin-bottom: -15px;
 }
 
-#nav-footer {
+.nav-footer {
   padding-bottom: 2%;
-}
-
-.nav-link {
-  margin-bottom: 2%;
 }
 
 /* FOOTER */

@@ -8,6 +8,7 @@ body {
   background-position: center;
 }
 
+/* IPad Pro Landscape and Portrait */
 @media only screen
   and (min-device-width: 1024px)
   and (max-device-width: 1366px)
@@ -79,10 +80,6 @@ section {
 .media {
   margin-bottom: 50px;
   margin-top: 50px;
-  max-width: 90%;
-}
-
-.media--soundcloud {
   max-width: 85%;
   margin-right: 7.5%;
   margin-left: 7.5%;
@@ -93,8 +90,6 @@ section {
   float: center;
   max-width: 90%;
   margin: 7.5%;
-  /*margin-left: 7.5%;
-  margin: 75px;*/
 }
 
 /* BOTTOM NAVBAR */

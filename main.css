@@ -6,6 +6,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  background-size: 160vw 120vh;
 }
 
 /* IPad Pro Landscape and Portrait */
@@ -21,6 +22,7 @@ body {
       background-repeat: repeat;
       background-attachment: fixed;
       background-position: top;
+      background-size: 160vw 120vh;
     }
 }
 

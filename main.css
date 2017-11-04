@@ -8,6 +8,21 @@ body {
   background-position: center;
 }
 
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    body {
+
+      background-color: black;
+      background-image: url('images/Back-3D-grey.jpg');
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-position: top;
+    }
+}
+
 /* TEXT */
 h2 {
   font-size: 26px;
@@ -57,6 +72,8 @@ section {
 .images__main {
   margin-top: 5px;
   border-radius: 50%;
+  width: 750px;
+  height: 500px;
 }
 
 .media {
@@ -65,39 +82,84 @@ section {
   max-width: 90%;
 }
 
+.media--soundcloud {
+  max-width: 85%;
+  margin-right: 7.5%;
+  margin-left: 7.5%;
+}
+
 .gallery {
   padding-top: 30px;
   float: center;
-  margin: 75px;
+  max-width: 90%;
+  margin: 7.5%;
+  /*margin-left: 7.5%;
+  margin: 75px;*/
 }
 
 /* BOTTOM NAVBAR */
-li {
-  display: inline;
-  margin-left: 20px;
-  margin-right: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+
+@media only screen and (max-width: 480px) {
+
+  li {
+    display: block;
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: aqua;
+    text-decoration: none;
+    font-family: 'Jura', sans-serif;
+  }
+
+  .nav-footer {
+    padding-bottom: 2%;
+  }
+
+  .nav-footer--logo {
+    margin-bottom: -5px;
+  }
+
 }
 
-ul {
-  list-style-type: none;
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
+@media only screen and (min-width: 481px) {
 
-a {
-  color: aqua;
-  text-decoration: none;
-  font-family: 'Jura', sans-serif;
-}
+  li {
+    display: inline;
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-.nav-footer {
-  padding-bottom: 2%;
-}
+  ul {
+    list-style-type: none;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
 
-.nav-footer--logo {
-  margin-bottom: -15px;
+  a {
+    color: aqua;
+    text-decoration: none;
+    font-family: 'Jura', sans-serif;
+  }
+
+  .nav-footer {
+    padding-bottom: 2%;
+  }
+
+  .nav-footer--logo {
+    margin-bottom: -15px;
+  }
 }
 
 /* FOOTER */

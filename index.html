@@ -7,58 +7,81 @@
 
     <!--- CSS Files -->
     <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Jura:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
   </head>
 
   <body>
-    <header>
-        <div>
-          <img class="images" src="images/E+A-LogoBlackColTrans.png" alt="Earth To Abigail" style="width:600px;height:330px">
+      <div class="outer">
+        <div class="middle">
+          <nav class="main-nav">
+            <ul class="active main-nav__list">
+              <li class="main-nav__el"><a class="main-nav__link" href="#Contact">Contact</a></li>
+              <li class="main-nav__el"><a class="main-nav__link" href="#Gallery">Gallery</a></li>
+              <li class="main-nav__el"><a class="main-nav__link" href="#News">News</a></li>
+              <li class="main-nav__el"><a class="main-nav__link" href="#Videos">Videos</a></li>
+              <li class="main-nav__el"><a class="main-nav__link" href="#Music">Music</a></li>
+              <li class="main-nav__el"><a class="main-nav__link" href="#About">About</a></li>
+              <li class="active">
+                <a href="#">
+                  <img class="main-nav--logo" src="images/E+A-Logo.png" alt="Top" style="height:45px">
+                </a>
+              </li>
+            </ul>
+          </nav>
+        <div class="inner hero">
+          <img class="images images__logo" src="images/E+A-LogoWhiteColTrans.png" alt="Earth To Abigail" style="width:600px;height:330px">
+          <h1>Electro Pop Tweaked by Digital Experimentation</h1>
+          <h3 class="sub-header sub-header-white">The Music is FREE and Always Will Be! so...
+          If you can, please<br><a href="https://www.patreon.com/EarthToAbigail">
+            Support Earth To Abigail on Patreon</a>
+          </h3><br>
+          <h3 class="sub-header sub-header-white"><a href="#mail-list">Join the Mailling List</a><br>
+            to receive all the updates on releases, concerts and projects!</h3>
         </div>
         <div>
-          <img class="images images__main" src="images/PE2-Birds.gif" alt="Loading main gif image...">
-        </div>
-    </header>
-
-<!--- WHAT -->
+      </div>
 
     <section class="content">
-      <section>
-      <h1>Electro Pop Tweaked by Digital Experimentation</h1>
-    <div class="content__About">
-      <p>Albert Einstein said: “The important thing is to not stop questioning;
-        curiosity has its own reason for existing." In this day and age of rapid technological advancement,
-        this statement takes a new dimension.</p>
-        <p>Born in 2017 from the vivid imagination of composer and musician Mynah Marie, Earth To Abigail
-        strives to redefine more traditional genres of music by intergrating new mediums of expression
-        such as Live Coding and DIY instrument making as well as using loops and samples. The goal is to use technology to
-        recreate a full experience for the audience while being alone on stage.
-        Curiosity is the main motivator in the making of Earth To Abigail. It is a musical playground as well as a laboratory
-        to experiment with technology through sounds in the hopes of communicating this curiosity to everyone experiencing the music.
-        </p>
-    </div>
-    </section>
 
 <!-- MEDIA -->
-
-    <section>
-      <h2>Videos</h2>
+      <section class="content__section" id="Music">
+      <h2>Follow on <a class="link-social" target="_blank" href="https://soundcloud.com/earth-to-abigail">
+        SoundCloud
+      </a></h2>
+      <iframe
+      label="Soundcloud - E+A Playlist" class="media" width="100%" height="350"
+      scrolling="no" frameborder="no" allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/496375728&color=%2380747c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+      </iframe>
+    </section>
+    <section class="content__section" id="Videos">
+      <h2>To see more videos, visit the <a class="link-social" target="_blank" href="https://www.youtube.com/channel/UCNRiG1dk40TVuv4AJJzBagw">
+        YouTube Channel
+      </a></h2>
         <iframe label="YouTube video - Paradise, Earth To Abigail" class="media" width="560" height="315"
         src="https://www.youtube.com/embed/jVn1AB0VaMc" frameborder="0" allowfullscreen></iframe>
         <iframe label="YouTube video - Jungle, Earth To Abigail" class="media" width="560" height="315"
         src="https://www.youtube.com/embed/AuNNYn2BQYU" frameborder="0" allowfullscreen></iframe>
-      <h2>Music</h2>
-        <iframe label="Soundcloud - Altered Reality, Earth To Abigail" class="media" width="100%" height="166" scrolling="no" frameborder="no"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/350575927&amp;color=%234fe8e8&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true">
-      </iframe>
-      <iframe label="Soundcloud - When The Ocean Is Falling, Earth To Abigail" class="media"width="100%" height="166" scrolling="no" frameborder="no"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/351174115&amp;color=%234fe8e8&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true">
-    </iframe>
-    </section>
+      </section>
 
-<!--- BIO --->
-<section>
+<!--- WHAT --->
+<section class="content__section" id="About">
+  <h2>What is Earth To Abigail?</h2>
+<div class="content__About">
+  <p>Albert Einstein said: “The important thing is to not stop questioning;
+    curiosity has its own reason for existing." In this day and age of rapid technological advancement,
+    this statement takes a new dimension.</p>
+    <p>Born in 2017 from the vivid imagination of composer and musician Mynah Marie, Earth To Abigail
+    strives to redefine more traditional genres of music by intergrating new mediums of expression
+    such as Live Coding and DIY instrument making as well as using loops and samples. The goal is to use technology to
+    recreate a full experience for the audience while being alone on stage.
+    Curiosity is the main motivator in the making of Earth To Abigail. It is a musical playground as well as a laboratory
+    to experiment with technology through sounds in the hopes of communicating this curiosity to everyone experiencing the music.
+    </p>
+</div>
   <h2>The Story</h2>
   <div class="content__About">
     <p>Mynah Marie has been living the life of a nomad for the past 15 years. Her past work as a musician
@@ -74,28 +97,83 @@
   </div>
 </section>
 
-<!-- PHOTOS  -->
-<section>
-<div class="gallery">
-  <h2>Photo Gallery</h2>
-<img class="gallery__images" src="images/SetUp_4Colours.jpg" alt="Earth To Abigail's studio and setup" style="width:550px;height:400px">
-<img class="gallery__images" src="images/PARADISE_19.jpg" alt="Still image from Earth To Abigail's Paradise videoclip" style="width:550px;height:400px">
-<img class="gallery__images" src="images/E+A-FB2Cropped.jpg" alt="Mynah Marie" style="width:500px;height:500px">
-</div>
+<!-- News --->
+<section class="content__section" id="News">
+  <h2>Concert Dates and other interesting things</h2>
+  <h3><span style="color: #F72FC9">Upcoming Tour dates will be added soon</span></h3>
 </section>
 
-<!--- FOOTER -->
-    <nav class="nav-footer">
-    <ul>
-      <li class="active"><a href="#"><img class="nav-footer--logo" src="images/E+ALogoCircle.png" alt="Click on the logo to return to the top of the page" style="width:45px;height:45px"></a></li>
-      <li><a href="https://www.facebook.com/EarthToAbigail" target="_blank">Facebook</a></li>
-      <li><a href="https://twitter.com/EarthAbigail" target="_blank">Twitter</a></li>
-      <li><a href="https://github.com/EarthToAbigail" target="_blank">GitHub</a></li>
+<!-- PHOTOS  -->
+<section class="content__section" id="Gallery">
+  <h2>Click On An Image To Download</h2>
+<section class="cf" style="max-width:86%;margin:auto">
+    <div class="fl w-100 w-50-ns ph2">
+      <a href="images/Paradise_Still.jpg" class="pv2 grow db no-underline black" download><img class="db w-100" src="images/Paradise_Still.jpg"></a>
+      <a href="images/Mynah_Live-banner.jpg" class="pv2 grow db no-underline black" download><img class="db w-100" src="images/Mynah_Live-banner.jpg"></a>
+    </div>
+    <div class="fl w-50 w-25-ns ph2">
+      <a href="images/E+A-Stairs.jpg" class="pv2 grow db no-underline black" download><img class="db w-100" src="images/E+A-Stairs.jpg"></a>
+      <a href="images/Birds.gif" class="pv2 grow db no-underline black" download><img class="db w-100" src="images/Birds.gif"></a>
+      <a href="images/SetUp_4Colours.jpg" class="no-underline pv2 grow db" download><img class="db w-100" src="images/SetUp_4Colours.jpg"></a>
+    </div>
+    <div class="fl w-50 w-25-ns ph2">
+      <a href="images/E+A-Logo.png" class="pv2 grow db no-underline black" download><img class="db w-100" src="images/E+A-Logo.png"></a>
+      <a href="images/MadeInNzrt-Poster.jpeg" class="pv2 grow db no-underline black" download><img class="db w-100" src="images/MadeInNzrt-Poster.jpeg"></a>
+    </div>
+</section>
+</section>
+
+<!--- CONTACT -->
+<section class="content__section" id="Contact">
+  <h2>Let's keep in touch!</h2>
+    <ul class="nav-footer__list">
+      <li class="nav-footer__el"><a class="nav-footer__link" href="https://www.facebook.com/EarthToAbigail" target="_blank">
+        <img src="./images/facebook-icon.png" style="height:30px;margin: 0 1vw -1vh"></img>Facebook</a></li>
+      <li class="nav-footer__el"><a class="nav-footer__link" href="https://twitter.com/EarthAbigail" target="_blank">
+        <img src="./images/tw.png" style="height:30px;margin: 0 1vw -1vh"></img>Twitter</a></li>
+      <li class="nav-footer__el"><a class="nav-footer__link" href="https://github.com/EarthToAbigail" target="_blank">
+        <img src="./images/github-sociocon.png" style="height:30px;margin: 0 1vw -1vh">GitHub</a></li>
     </ul>
-  </nav>
+
+  <div class="container">
+  <form id="contact" action="" method="post">
+    <h3>For Booking, Inquiries, Press</h3>
+    <h4>You can also leave comments, suggestions and ideas, these are important too!</h4>
+    <fieldset>
+      <input placeholder="Your Name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+</div>
+</section>
+<section>
+  <p>Earth To Abigail distributes her music for free, that means it is free to download and share
+    However, creating, performing and getting involved in a variety of community
+    oriented projects takes time and energy and would not be possible without the amazing support
+    of fans and patrons.</p><br></br>
+  <h3 class="sub-header"><a href="https://www.patreon.com/EarthToAbigail" target="_blank">
+    See how you can support Earth To Abigail on Patreon
+  </a></h3>
+  <section class="content__section" style="padding-bottom: 5vh">
+  <h3 class="sub-header" id="mail-list">Join the Mailing List to recieve monthly updates</h3>
+</section>
+</section>
   </section>
+
+  <!--- FOOTER -->
 <footer>
-  <p class="footer__text">Copyright © EarthToAbigail 2017</p>
+  <p class="footer__text">Copyright © EarthToAbigail 2018</p>
 </footer>
 
     <!--- JS scripts -->

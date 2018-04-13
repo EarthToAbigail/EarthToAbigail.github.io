@@ -1,31 +1,127 @@
+/* CSS RESET */
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
 /* BACKGROUND */
 body {
   background-color: black;
-  background-image: url('images/Back-3D-grey.jpg');
+  background-image: url('images/Mynah_Live-banner.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: 160vw 120vh;
+  margin: 0;
+}
+
+/* TOP NAVBAR */
+.main-nav__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(3, 3, 3, 0.8);
+    position: fixed;
+    width: 100%;
+}
+
+.main-nav__el {
+    float: right;
+
+}
+
+.main-nav--logo {
+  margin-top: 10px;
+  padding-left: 3vw;
+}
+
+.main-nav__el .main-nav__link {
+    display: block;
+    color: aqua;
+    font-family: 'Jura', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.main-nav__el a:hover {
+    background-color: #333;
+    color: #F72FC9;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+}
+
+.link-social:link {
+  color: #909;
+}
+
+.link-social:hover {
+  transition: all 0.4s ease;
+  color: #F72FC9;
+}
+
+.sub-header a:link {
+  color: aqua;
+}
+
+.sub-header a:visited {
+  color: aqua;
+}
+.sub-header a:hover {
+  transition: all 0.3s ease-in-out;
+  color: #F72FC9;
+  font-size: 26px;
 }
 
 /* TEXT */
-h1, h2, p {
+h1 {
+  font-family: 'Jura', sans-serif;
+  padding-bottom: 7vh;
+}
+
+h2, h3, p {
   font-family: 'Jura', sans-serif;
   max-width: 85%;
   margin-right: 7.5%;
   margin-left: 7.5%;
+  /* margin: auto; */
+}
+
+h2, h3 {
+  text-align: left;
+  color: aqua;
 }
 
 h1 {
   font-size: 30px;
   color: #F72FC9;
   text-align: center;
+  /* margin-bottom: 12vh; */
 }
 
 h2 {
-  color: aqua;
   font-size: 26px;
-  text-align: center;
+  margin: 5vh auto;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: 'Do Hyeon', sans-serif;
 }
 
 p {
@@ -34,12 +130,23 @@ p {
   text-align: justify;
 }
 
+.sub-header-white {
+  color: #ddd;
+}
+
+.sub-header {
+  text-align: center;
+  font-size: 18px;
+}
+
+
+/* SECTIONS */
 section {
   margin-top: 10px;
 }
 
 .content {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 15px;
   padding-top: 60px;
   max-width: 83vw;
@@ -48,9 +155,39 @@ section {
   text-align: center;
 }
 
+.content__section {
+  padding-top: 50px;
+}
+
 .content__About {
   padding-top: 10px;
   padding-bottom: 20px;
+}
+
+.hero {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 55%;
+  margin-top: 12vh;
 }
 
 /* IMAGES AND MEDIA */
@@ -58,32 +195,11 @@ section {
   margin: 0 auto;
   display: block;
   max-width: 100%;
-  /*padding-top: 20px;
-  padding-bottom: 0px;*/
+  max-height: 100%;
 }
 
-.images__main {
-  margin-top: 5px;
-  border-radius: 50%;
-  /*width: 750px;
-  height: 500px;*/
-  width: 60%;
-  height: 68%;
-}
-
-.gallery {
-  padding-bottom: 10px;
-  float: center;
-  max-width: 90%;
-  margin: 3% 7.5%;
-}
-
-.gallery__images {
-  margin: 0 auto;
-  display: block;
-  max-width: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
+.images__logo {
+  padding-top: 3vh;
 }
 
 .media {
@@ -95,36 +211,40 @@ section {
 }
 
 /* BOTTOM NAVBAR */
-li {
+.nav-footer__el {
   display: inline;
-  margin-left: 10px;
-  margin-right: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  text-align: left;
+  margin: 10vh 5vw;
 }
 
-ul {
+.nav-footer__list {
   list-style-type: none;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
 }
 
-a {
+.nav-footer__link {
   color: aqua;
   text-decoration: none;
   font-family: 'Jura', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+.nav-footer__el a:hover {
+  color: #F72FC9;
+}
+
+.nav-footer__el img:hover {
+  transform: scale(1.4);
+  transition: 0.3s;
 }
 
 .nav-footer {
   padding-bottom: 2%;
 }
 
-.nav-footer--logo {
-  margin-bottom: -15px;
-}
 
-/* Adjust for mobile */
+/* Adjust for mobile  TODO */
 @media only screen and (max-width: 720px) {
 
   li {
@@ -143,7 +263,108 @@ footer {
 }
 
 .footer__text {
-  color: black;
+  color: #555;
   font-size: 16px;
   text-align: center;
+}
+
+/* CONTACT FORM */
+.container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact textarea, #contact button[type="submit"] {
+  font:400 14px/18px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+	padding: 25px;
+	margin: 0;
+}
+
+#contact h3 {
+	display: block;
+	font-size: 20px;
+	font-weight: 400;
+  text-align: center;
+  font-family: 'Jura', sans-serif;
+}
+
+#contact h4 {
+  font-family: 'Jura', sans-serif;
+	margin:5px 0 15px;
+	display:block;
+	font-size:16px;
+  color: #ddd;
+  margin-bottom: 5vh;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact textarea {
+	width:100%;
+	border:3px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:3px solid #C0C;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:20px;
+  font-family: 'Jura', sans-serif;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:3px solid #C0C;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
 }

@@ -241,19 +241,6 @@ section {
   padding-bottom: 2%;
 }
 
-
-/* Adjust for mobile  TODO */
-@media only screen and (max-width: 720px) {
-
-  li {
-    display: block;
-  }
-
-  .nav-footer--logo {
-    margin-bottom: -5px;
-  }
-}
-
 /* FOOTER */
 footer {
   padding-top: 2%;
@@ -374,3 +361,5 @@ fieldset {
 #mc-embedded-subscribe {
   font-family: 'Jura', sans-serif;
 }
+
+/* Adjust for mobile  TODO */

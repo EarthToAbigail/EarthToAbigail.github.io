@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=Jura:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript" src="form.js"></script>
   </head>
 
   <body>
@@ -138,20 +140,23 @@
     </ul>
 
   <div class="container">
-  <form id="contact" action="" method="post">
+  <form id="contact" action="javascript:sendEmail()" method="post">
     <h3>For Booking, Inquiries, Press</h3>
     <h4>You can also leave comments, suggestions and ideas, these are important too!</h4>
     <fieldset>
-      <input placeholder="Your Name" type="text" tabindex="1" required autofocus>
+      <input id="contact-name" placeholder="Your Name" type="text" tabindex="1" required autofocus>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+      <input id="contact-email" placeholder="Your Email Address" type="email" tabindex="2" required>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
+      <input id="contact-phone" placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
     </fieldset>
     <fieldset>
-      <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+      <input id="contact-subject" placeholder="Subject Of Your Message" type="text" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <textarea id="contact-message" placeholder="Type your Message Here...." tabindex="5" required></textarea>
     </fieldset>
     <fieldset>
       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
@@ -197,5 +202,6 @@
 </footer>
 
     <!--- JS scripts -->
+
   </body>
 </html>

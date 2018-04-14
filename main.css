@@ -99,7 +99,6 @@ h2, h3, p {
   max-width: 85%;
   margin-right: 7.5%;
   margin-left: 7.5%;
-  /* margin: auto; */
 }
 
 h2, h3 {
@@ -111,7 +110,6 @@ h1 {
   font-size: 30px;
   color: #F72FC9;
   text-align: center;
-  /* margin-bottom: 12vh; */
 }
 
 h2 {
@@ -367,4 +365,9 @@ fieldset {
 }
 :-ms-input-placeholder {
  color:#888;
+}
+
+/* MAIL CHIMP FORM */
+#mc-embedded-subscribe {
+  font-family: 'Jura', sans-serif;
 }

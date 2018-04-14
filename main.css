@@ -333,7 +333,7 @@ fieldset {
 	cursor:pointer;
 	width:100%;
 	border:none;
-	background:#0CF;
+	background:#555;
 	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;
@@ -342,7 +342,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-	background:#09C;
+	background: #D5008F;
 	-webkit-transition:background 0.3s ease-in-out;
 	-moz-transition:background 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
@@ -367,6 +367,9 @@ fieldset {
  color:#888;
 }
 
+.contact-input {
+  border-radius: 5px;
+}
 /* MAIL CHIMP FORM */
 #mc-embedded-subscribe {
   font-family: 'Jura', sans-serif;

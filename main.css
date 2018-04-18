@@ -331,7 +331,8 @@ fieldset {
 #contact button[type="submit"]:hover {
 	background: #D5008F;
 	-webkit-transition:background 0.3s ease-in-out;
-	-moz-transition:background 0.3s ease-in-out;
+	-moz-transition:bac
+  kground 0.3s ease-in-out;
 	transition:background-color 0.3s ease-in-out;
 }
 
@@ -360,6 +361,14 @@ fieldset {
 /* MAIL CHIMP FORM */
 #mc-embedded-subscribe {
   font-family: 'Jura', sans-serif;
+}
+
+/* BandsInTown WIDGET */
+
+.content__widget {
+	width: 85%;
+	margin: auto;
+	padding-top: 3vh;
 }
 
 /* Adjust for mobile  TODO */
